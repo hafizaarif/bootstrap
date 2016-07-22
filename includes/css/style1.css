@@ -1,0 +1,82 @@
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+width: 100%; /* use this, or not */
+margin: auto;
+
+}
+
+.carousel-inner > .item > img{
+
+       height:500px;
+     }
+.Species img {
+
+width: 100%;
+
+}
+.Species{
+  padding-bottom: 20px;
+}
+footer{
+  background-color: black;
+  color: grey;
+height: 100px;
+}
+footer img{
+width: 35px;
+height: 7px;
+padding-right: 10px;
+float: right;;
+
+
+}
+.row{
+  text-align: center;
+  font-family: cursive;
+
+}
+.icons{
+  font-family: cursive;
+  font-size: 14px;
+  color: white;
+}
+.copyright
+{
+  text-align: center;
+  font-family: cursive;
+  font-size: 14px;
+  color: white;
+  padding-top: 30px;
+
+}
+.Species img{
+  width: 500px;
+  height: 400px;
+
+
+}
+.project {
+  width: 100%;
+  height:300px;
+}
+.mydataContainer{
+  padding-bottom: 50px;
+}
+.myBononos{
+  font-family: cursive;
+  font-weight: bold;
+}
+.navbar-brand{
+  font-family: cursive;
+
+}
+.mythreat{
+
+  padding-top: 90px;
+}
+
+.container{
+  padding-left: 0px;
+  padding-right: 0px;
+}
