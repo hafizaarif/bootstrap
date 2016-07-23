@@ -9,6 +9,11 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="includes/css/style1.css">
+  <script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+</script>
 </head>
 <body>
 <div class="container" id="main">
@@ -52,7 +57,8 @@
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Login in</a></li>
+          <li><a href="#">Views <span class="badge">1042</span></a></li>
+          <li><a href="#" data-toggle="popover" title="Damn damaged" data-content="Urgent">News</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Setting <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -74,6 +80,7 @@
   							<a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
   						</li>
             </ul>
+
           </li>
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -138,7 +145,14 @@
 
 </div>-->
 
-
+<div class="container">
+  <h2>Wild Life Percentage</h2>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+      70%
+    </div>
+  </div>
+</div>
 <div class="Species">
   <div id="options">
     <div class="row" id="features">
@@ -224,6 +238,7 @@ its natural treasures.
 </div>
 </div>
 </div>
+
 <footer>
   <div class="container" >
 <div class="row">

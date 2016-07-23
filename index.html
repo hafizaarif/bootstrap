@@ -1,191 +1,250 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wild Life</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="includes/css/style1.css">
+  <script>
+         $(document).ready(function(){
+         $('[data-toggle="popover"]').popover();
+         });
+ </script>
+</head>
+<body>
+<div class="container" id="main">
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
 
-<html>
-	<head>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Indian Wild Life Foundation</a>
+      </div>
 
-		<!-- Website Title & Description for Search Engine purposes -->
-		<title></title>
-		<meta name="description" content="">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">What We Do Here <span class="sr-only">(current)</span></a></li>
+					  <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Projects <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Wild Life preservation</a></li>
+              <li><a href="#">Water Preservation</a></li>
+              <li><a href="#">Air Preservation</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Species Preservation</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Soil Preservation</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+           <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+					<!--Alert Box-->
+          <li><a href="#">Views <span class="badge">1042</span></a></li>
+					<!--Pop Over-->
+          <li><a href="#" data-toggle="popover" title="Damn damaged" data-content="Urgent">News</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Setting <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li>
+  							<a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
+  						</li>
 
-		<!-- Mobile viewport optimized -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  						<li>
+  							<a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a>
+  						</li>
 
-		<!-- Bootstrap CSS -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+  						<li>
+  							<a href="#"><span class="glyphicon glyphicon-briefcase"></span>Account</a>
+  						</li>
 
-		<!-- Custom CSS -->
-		<link href="includes/css/styles.css" rel="stylesheet">
+  						<li class="divider"></li>
 
-		<!-- Include Modernizr in the head, before any other Javascript -->
-		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+  						<li>
+  							<a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+  						</li>
+            </ul>
 
-	</head>
-	<body>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div>
+<!-- /.Jumbotron and Carousel inside it -->
+    <div  class="col-md-12" >
+      <div class="jumbotron" style="padding:0px">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
 
-	<!-- Your Code Goes Here. Remember to remove this comment once you've started, you don't need it :) -->
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="images/p11.jpg" alt="Image Error">
+            </div>
 
-	<div class="container" id="main">
+            <div class="item">
+              <img src="images/p22.jpg" alt="Image Error">
+            </div>
 
-		<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
+            <div class="item">
+              <img src="images/p33.jpg" alt="Image Error" >
+            </div>
+
+            <div class="item">
+              <img src="images/p4.jpg" alt="Image Error" >
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
-    </ul>
+
+
   </div>
-</nav>
+
+<br>
+
+<div class="container">
+  <h2>Wild Life Percentage</h2>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+      70%
+    </div>
+  </div>
+</div>
+<div class="Species">
+  <div id="options">
+    <div class="row" id="features">
+      <h1>Range Of Species</h1><b><br>
+    <div class="col-md-4 col_class">
+      <div class="panel">
+    <img src="images/p1.jpg" class="img-responsive" alt="Image Error" >
+  </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel">
+<img src="images/p2.jpg" class="img-responsive" alt="Image Error" >
+</div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel">
+<img src="images/p3.jpg" class="img-responsive" alt="Image Error">
+</div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="container mydataContainerythreat" >
 
 
-<div class="jumbotron">
-  <h1>Bootstrap Tutorial</h1>
-  <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+<div  class="col-md-8" >
+   <h2>Threat</h2>
+
+	 	<p>
+				Overview
+		</p>
+		<p>
+			Mankind is the biggest threat to land and wildlife.
+		</p>
+		<p>
+				India is a huge continent that is rapidly changing and growing. Unfortunately, people are threatening Africa’s
+				natural habitats and biodiversity—many without fully realizing the consequences. Through smart planning and active
+				community involvement, Indian Wildlife Foundation can help Indians develop a modern India that also protects
+				its natural treasures.
+		</p>
+
+</div>
+<div  class="col-md-4 mythreat">
+  <img src="images/threat1.jpg" class="img-responsive" alt="Cinque Terre"  width="100%" ><br>
+</div>
 </div>
 
+<div class="container myBononos" >
 
-<div class="row" id="bigCallout">
-<div class="col-12">
-
-	<div class="alert alert-success alert-block fade in" id="successAlert">
-		<button type="button" class="close" data-dismiss="alert">&times;</button>
-
-		<h4>Success!</h4>
-		<p>You just made this element display by using jQuery. Click the "x" in the top right corner to close this bad boy.</p>
-	</div><!-- end alert -->
-
-	<!-- Visible only on small devices -->
-	<div class="well well-small visible-sm">
-		<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Give us a call!</a>
-	</div><!-- end well-small -->
-
-	<div class="well">
-		<div class="page-header">
-			<h1>A Fancy Header <small>A subheader for extra awesome.</small></h1>
-		</div><!-- end page-header -->
-
-		<p class="lead">Some solid leading copy will help get your users engaged. Use this area to come up with something real nice. Know what I'm sayin?</p>
-
-		<a href="" class="btn btn-large btn-primary" id="alertMe">Click a nice big button</a>
-		<a href="" class="btn btn-large btn-link">or a secondary link</a>
-	</div><!-- end well -->
-
-</div><!-- end col-12 -->
-</div><!-- end bigCallout -->
+<div  class="col-md-4" >
+  <h2>Project</h2><br>
+  <p>
+    <img src="images/Project.jpg" class="img-responsive" alt="Cinque Terre" height="300px" width="100%" ><br>
+  </p>
 
 
-		<div class="row" id="featuresHeading">
+</div>
+		<div  class="col-md-8 "><br><br>
+  		<p>
+    	<h4>Descriptions & Plan</h4>
+  		</p>
+  		<p>
+    			Bonobos in danger.
+			</p>
+				<p>
+  					One of the greatest threats to wildlife in the Democratic Republic of Congo (DRC) is loss of habitat due to land conversion,
+ 						human encroachment, and logging. Establishing protected areas like national parks and reserves is one important step in
+  					helping to reverse this trend. Protecting habitat is especially important for the endangered bonobos, which only live in
+  					DRC and whose population is rapidly decreasing.
+  		</p>
+  	<p>
+    		<h4>A new bonobo reserve—by the community, for the community.</h4></p><p>
+      	At the request of local communities—who saw the success and economic benefits to the community that arose from the
+      	establishment of the nearby Lomako-Yokokala Faunal Reserve—AWF worked with local stakeholders and the Iyondji community
+       	to establish another protected area in which bonobos can live free of external threat.
+      	Iyondji is a priority conservation target, as it has a high concentration of bonobos and an intact forest. It is also
+      	situated on the periphery of the already-safeguarded Luo Scientific Reserve, allowing for an immediate expansion of core protected habitat.
+     		On April 12, 2012, the Congolese government officially recognized the Iyondji Bonobo Community Reserve, an 1,100-square-kilometer
+     		protected area that will also help protect the forest elephant, Congo peacock, and other wildlife.
+  	</p>
+	</div>
+</div>
+</div>
 
-		</div><!-- end row -->
-
-
-		<div class="row" id="features">
-
-		</div><!-- end row -->
-
-
-		<div class="row" id="moreInfo">
-
-		</div><!-- end row -->
-
-
-		<div class="row" id="moreCourses">
-	<div class="col-12">
-		<h3>Learn more about Web Design</h3>
-		<div class="thumbnails row">
-			<div class="col-6">
-				<div class="thumbnail">
-					<img src="images/item_psd2html5.jpg" alt="PSD to HTML5 & CSS3">
-
-					<div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> <sup>$</sup>39</div>
-
-					<div class="caption">
-						<h3>PSD to HTML5 &amp; CSS3</h3>
-
-						<p>Learn how to take a PSD and turn it into a beautiful, hand-coded HTML5 &amp; CSS3 website with this web design crash course.</p>
-
-						<p><a href="https://www.udemy.com/build-beautiful-html5-website/" class="btn btn-primary btn-small" target="_blank">Take course</a> <a href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank" class="btn btn-small btn-link">Learn more</a></p>
-					</div><!-- end caption -->
-				</div><!-- end thumbnail -->
-			</div><!-- end col-6 -->
-
-			<div class="col-6">
-				<div class="thumbnail">
-					<img src="images/item_webhosting101.jpg" alt="Web Hosting 101">
-
-					<div class="label label-info price"><span class="glyphicon glyphicon-tag"></span> Free</div>
-
-					<div class="caption">
-						<h3>Web Hosting 101</h3>
-
-						<p>Learn how to publish your own website live in no time with this web hosting crash course. Plus setup your first Wordpress site in 5-minutes!</p>
-
-						<p><a href="https://www.udemy.com/web-hosting-101/" class="btn btn-primary btn-small" target="_blank">Take course</a> <a href="https://www.udemy.com/web-hosting-101/" target="_blank" class="btn btn-small btn-link">Learn more</a></p>
-					</div><!-- end caption -->
-				</div><!-- end thumbnail -->
-			</div><!-- end col-6 -->
-		</div><!-- end row -->
-	</div><!-- end col-12 -->
-</div><!-- end moreCourses -->
-
-	</div><!-- end container -->
-
-
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-2">
-				<h6>Copyright &copy; 2013 {name}</h6>
-				</div><!-- end col-sm-2 -->
-
-				<div class="col-sm-4">
-					<h6>About Us</h6>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div><!-- end col-sm-4 -->
-
-				<div class="col-sm-2">
-					<h6>Navigation</h6>
-					<ul class="unstyled">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Links</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</div><!-- end col-sm-2 -->
-
-				<div class="col-sm-2">
-					<h6>Follow Us</h6>
-					<ul class="unstyled">
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Google Plus</a></li>
-					</ul>
-				</div><!-- end col-sm-2 -->
-
-				<div class="col-sm-2">
-					<h6>Coded with <span class="glyphicon glyphicon-heart"></span> by Brad</h6>
-				</div><!-- end col-sm-2 -->
-			</div><!-- end row -->
-		</div><!-- end container -->
-	</footer>
-
-	<!-- All Javascript at the bottom of the page for faster page loading -->
-
-	<!-- First try for the online version of jQuery-->
-	<script src="http://code.jquery.com/jquery.js"></script>
-
-	<!-- If no online access, fallback to our hardcoded version of jQuery -->
-	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
-
-	<!-- Bootstrap JS -->
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-
-	<!-- Custom JS -->
-	<script src="includes/js/script.js"></script>
-
-	</body>
+<footer>
+	<div class="container" >
+    <div class="row">
+    <div  class="col-md-4 icons" >
+ 		<h4>Follow Us<h3>
+		<img src="images/google.png" class="img-responsive" alt="Image Error" >
+		<img src="images/fb.jpg" class="img-responsive" alt="Image Error" >
+		<img src="images/inst.png" class="img-responsive" alt="Image Error" >
+ 		<img src="images/twitter.jpg" class="img-responsive" alt="Image Error" >
+		</div>
+		<div  class="col-md-8 copyright" >
+				<p>
+  				Copyright@WiproDigital.com
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
 </html>
